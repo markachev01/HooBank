@@ -1,6 +1,4 @@
 .btns {
-    @include transition();
-
     display: inline-block;
     width: 140px;
     height: 45px;
@@ -14,9 +12,9 @@
 
     font-size: $font-12;
     font-weight: $font-w-500;
-
+    
     color: $color-white;
-    background: $color-green;
+    background-color: $color-green;
     box-shadow: 0 8px 15px $box-shadow-third;
 
     &:hover {
@@ -26,21 +24,22 @@
         box-shadow: 0 5px 10px $box-shadow-second;
         text-decoration: none;
 
-        transform: translateY(-3px);
+        transform: translateY(-3px)
     }
 
-    &__add {
-        background: $color-green;
+    &__add{
+        background-color: $color-green;
+
     }
 
-    &__up {
+    &__up{
         position: fixed;
         right: 20px;
         bottom: 0;
 
         cursor: pointer;
 
-        &_hide {
+        &_hide{
             display: none;
         }
     }
